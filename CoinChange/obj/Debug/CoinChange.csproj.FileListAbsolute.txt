@@ -1,0 +1,5 @@
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChange\bin\Debug\CoinChange.dll
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChange\bin\Debug\CoinChange.pdb
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChange\obj\Debug\CoinChange.dll
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChange\obj\Debug\CoinChange.pdb
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChange\obj\Debug\CoinChange.csprojResolveAssemblyReference.cache

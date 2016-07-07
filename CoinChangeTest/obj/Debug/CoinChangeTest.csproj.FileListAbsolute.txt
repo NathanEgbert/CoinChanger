@@ -1,0 +1,7 @@
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChangeTest\obj\Debug\CoinChangeTest.csprojResolveAssemblyReference.cache
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChangeTest\bin\Debug\CoinChangeTest.dll
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChangeTest\bin\Debug\CoinChangeTest.pdb
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChangeTest\bin\Debug\CoinChange.dll
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChangeTest\bin\Debug\CoinChange.pdb
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChangeTest\obj\Debug\CoinChangeTest.dll
+C:\Users\nathan.egbert\Desktop\CoinChanger\CoinChangeTest\obj\Debug\CoinChangeTest.pdb
