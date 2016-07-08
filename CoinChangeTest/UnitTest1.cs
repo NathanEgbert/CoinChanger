@@ -6,6 +6,7 @@ namespace CoinChangeTest
     [TestClass]
     public class UnitTest1
     {
+        //single quarter
         [TestMethod]
         public void TestMethod1()
         {
@@ -13,12 +14,14 @@ namespace CoinChangeTest
             var obj1 = new Class1();
 
             //Act
-            obj1.GreaterThanTwentyFive(25);
-
+            obj1.MakeChange(25);
+            var x = obj1.getQuarters();
             //Assert
-            Assert.AreEqual(obj1.qCount, 1);
-        }
+            Assert.AreEqual(x, 1);
 
+        }//end test 1
+
+        //single dime
         [TestMethod]
         public void TestMethod2()
         {
@@ -26,12 +29,14 @@ namespace CoinChangeTest
             var obj1 = new Class1();
 
             //Act
-            obj1.GreaterThanTwentyFive(10);
-
+            obj1.MakeChange(10);
+            var x = obj1.getDimes();
             //Assert
-            Assert.AreEqual(obj1.dCount, 1);
-        }
+            Assert.AreEqual(x, 1);
 
+        }//end test 1
+
+        //single nickel
         [TestMethod]
         public void TestMethod3()
         {
@@ -39,12 +44,14 @@ namespace CoinChangeTest
             var obj1 = new Class1();
 
             //Act
-            obj1.GreaterThanTwentyFive(5);
-
+            obj1.MakeChange(5);
+            var x = obj1.getNickels();
             //Assert
-            Assert.AreEqual(obj1.nCount, 1);
-        }
+            Assert.AreEqual(x, 1);
 
+        }//end test 1
+
+        //single penny
         [TestMethod]
         public void TestMethod4()
         {
@@ -52,12 +59,15 @@ namespace CoinChangeTest
             var obj1 = new Class1();
 
             //Act
-            obj1.GreaterThanTwentyFive(1);
-
+            obj1.MakeChange(1);
+            var x = obj1.getPennies();
             //Assert
-            Assert.AreEqual(obj1.pCount, 1);
-        }
+            Assert.AreEqual(x, 1);
 
+        }//end test 1
+
+
+        //double quarter
         [TestMethod]
         public void TestMethod5()
         {
@@ -65,13 +75,28 @@ namespace CoinChangeTest
             var obj1 = new Class1();
 
             //Act
-            obj1.GreaterThanTwentyFive(80);
-
+            obj1.MakeChange(50);
+            var x = obj1.getQuarters();
             //Assert
-            Assert.AreEqual(obj1.qCount, 3);
-            Assert.AreEqual(obj1.nCount, 1);
-        }
+            Assert.AreEqual(x, 2);
 
+        }//end test 1
 
+        //Quarter & Dime
+        [TestMethod]
+        public void TestMethod6()
+        {
+            //Arrange
+            var obj1 = new Class1();
+
+            //Act
+            obj1.MakeChange(35);
+            var x = obj1.getQuarters();
+            var y = obj1.getDimes();
+            //Assert
+            Assert.AreEqual(x, 1);
+            Assert.AreEqual(y, 1);
+
+        }//end test 1
     }
 }
