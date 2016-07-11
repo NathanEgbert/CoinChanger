@@ -11,11 +11,11 @@ namespace CoinChangeTest
         public void TestMethod1()
         {
             //Arrange
-            var obj1 = new Class1();
+            Class1 obj1 = new Class1();
 
             //Act
             obj1.MakeChange(25);
-            var x = obj1.getQuarters();
+            var x = obj1.Quarters;
             //Assert
             Assert.AreEqual(x, 1);
 
@@ -26,11 +26,11 @@ namespace CoinChangeTest
         public void TestMethod2()
         {
             //Arrange
-            var obj1 = new Class1();
+            Class1 obj1 = new Class1();
 
             //Act
             obj1.MakeChange(10);
-            var x = obj1.getDimes();
+            var x = obj1.Dimes;
             //Assert
             Assert.AreEqual(x, 1);
 
@@ -41,11 +41,11 @@ namespace CoinChangeTest
         public void TestMethod3()
         {
             //Arrange
-            var obj1 = new Class1();
+            Class1 obj1 = new Class1();
 
             //Act
             obj1.MakeChange(5);
-            var x = obj1.getNickels();
+            var x = obj1.Nickels;
             //Assert
             Assert.AreEqual(x, 1);
 
@@ -56,11 +56,11 @@ namespace CoinChangeTest
         public void TestMethod4()
         {
             //Arrange
-            var obj1 = new Class1();
+            Class1 obj1 = new Class1();
 
             //Act
             obj1.MakeChange(1);
-            var x = obj1.getPennies();
+            var x = obj1.Pennies;
             //Assert
             Assert.AreEqual(x, 1);
 
@@ -72,11 +72,11 @@ namespace CoinChangeTest
         public void TestMethod5()
         {
             //Arrange
-            var obj1 = new Class1();
+            Class1 obj1 = new Class1();
 
             //Act
             obj1.MakeChange(50);
-            var x = obj1.getQuarters();
+            var x = obj1.Quarters;
             //Assert
             Assert.AreEqual(x, 2);
 
@@ -87,12 +87,12 @@ namespace CoinChangeTest
         public void TestMethod6()
         {
             //Arrange
-            var obj1 = new Class1();
+           Class1 obj1 = new Class1();
 
             //Act
             obj1.MakeChange(35);
-            var x = obj1.getQuarters();
-            var y = obj1.getDimes();
+            var x = obj1.Quarters;
+            var y = obj1.Dimes;
             //Assert
             Assert.AreEqual(x, 1);
             Assert.AreEqual(y, 1);

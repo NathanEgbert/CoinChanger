@@ -64,24 +64,37 @@ namespace CoinChange
 
         //getters
 
-        public int getQuarters()
+        public int Quarters
         {
-            return qCount;
+            get
+            {
+                return qCount;
+            }
         }
 
-        public int getDimes()
+        public int Dimes
         {
-            return dCount;
+            get
+            {
+                return dCount;
+            }
         }
 
-        public int getNickels()
+        public int Nickels
         {
-            return nCount;
+            get
+            {
+                return nCount;
+            }
         }
 
-        public int getPennies()
+        public int Pennies
         {
-            return pCount;
+             get
+            {
+                return pCount;
+            }
+           
         }
 
 

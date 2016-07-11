@@ -26,13 +26,13 @@ namespace CoinChanger
         {
             
             //create object
-            var obj1 = new Class1();
+            Class1 obj1 = new Class1();
             obj1.MakeChange(input);
 
-            Console.WriteLine("Quarter:" + obj1.getQuarters());
-            Console.WriteLine("Dime:" + obj1.getDimes());
-            Console.WriteLine("Nickel:" + obj1.getNickels());
-            Console.WriteLine("Penny:" + obj1.getPennies());
+            Console.WriteLine("Quarter:" + obj1.Quarters);
+            Console.WriteLine("Dime:" + obj1.Dimes);
+            Console.WriteLine("Nickel:" + obj1.Nickels);
+            Console.WriteLine("Penny:" + obj1.Pennies);
 
             
         }
