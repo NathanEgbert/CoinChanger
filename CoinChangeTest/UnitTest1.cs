@@ -8,7 +8,7 @@ namespace CoinChangeTest
     {
         //single quarter
         [TestMethod]
-        public void TestMethod1()
+        public void singleQuarter()
         {
             //Arrange
             Class1 obj1 = new Class1();
@@ -23,7 +23,7 @@ namespace CoinChangeTest
 
         //single dime
         [TestMethod]
-        public void TestMethod2()
+        public void singleDime()
         {
             //Arrange
             Class1 obj1 = new Class1();
@@ -38,7 +38,7 @@ namespace CoinChangeTest
 
         //single nickel
         [TestMethod]
-        public void TestMethod3()
+        public void singleNickel()
         {
             //Arrange
             Class1 obj1 = new Class1();
@@ -53,7 +53,7 @@ namespace CoinChangeTest
 
         //single penny
         [TestMethod]
-        public void TestMethod4()
+        public void singlePenny()
         {
             //Arrange
             Class1 obj1 = new Class1();
@@ -69,7 +69,7 @@ namespace CoinChangeTest
 
         //double quarter
         [TestMethod]
-        public void TestMethod5()
+        public void doubleQuarter()
         {
             //Arrange
             Class1 obj1 = new Class1();
@@ -84,7 +84,7 @@ namespace CoinChangeTest
 
         //Quarter & Dime
         [TestMethod]
-        public void TestMethod6()
+        public void quarterAnddime()
         {
             //Arrange
            Class1 obj1 = new Class1();
@@ -98,5 +98,7 @@ namespace CoinChangeTest
             Assert.AreEqual(y, 1);
 
         }//end test 1
+
+       
     }
 }

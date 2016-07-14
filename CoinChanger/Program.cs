@@ -14,12 +14,13 @@ namespace CoinChanger
         static void Main(string[] args)
         {
             int input1;
-
+            
             Console.WriteLine("Enter coins amount 1-99: ");
             input1 = Convert.ToInt32(Console.ReadLine());
             
             //execute method
             execute(input1);
+            
         }
 
         public static void execute(int input)
@@ -33,8 +34,7 @@ namespace CoinChanger
             Console.WriteLine("Dime:" + obj1.Dimes);
             Console.WriteLine("Nickel:" + obj1.Nickels);
             Console.WriteLine("Penny:" + obj1.Pennies);
-
-            
-        }
-    }
+    
+        }//end execute method
+    }//end class program
 }

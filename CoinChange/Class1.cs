@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace CoinChange
 {
     public class Class1
     {
-        public int qCount;
+        private int qCount;
         private int dCount;
         private int nCount;
         private int pCount;
+
+       private int quarter = 25;
+       private int dime = 10;
+       private int nickel = 5;
+       private int penny = 1;
+       private int count = 1;
+       
 
         
         //constructor
@@ -28,39 +36,64 @@ namespace CoinChange
 
         public void MakeChange(int input)
         {
+            
+
             while (input > 0)
             {
-                if (input >= 25)
+                if (coinEvaluation(input, quarter))
                 {
-                    qCount += 1;
-                    input -= 25;
+                    qCount = coinCountEvaluation(qCount);
+                    input -= quarter;
                    
                 }
 
-                else if (input >= 10)
+                else if (coinEvaluation(input, dime))
                 {
-                    dCount += 1;
-                    input -= 10;
+                    dCount = coinCountEvaluation(dCount);
+                     input-= dime;
                     
                 }
 
-                else if (input >= 5)
+                else if (coinEvaluation(input, nickel))
                 {
-                    nCount += 1;
-                    input -= 5;
+                    nCount = coinCountEvaluation(nCount);
+                     input -= nickel;
                     
                 }
 
-                else if (input >= 1)
+                else if (coinEvaluation(input, penny))
                 {
-                    pCount += 1;
-                    input -= 1;
+                    pCount = coinCountEvaluation(pCount);
+                     input -= penny;
                     
                 }
             }//end while loop
 
         }//end make change method
 
+
+        //evaluates the coins compared to the input
+        private bool coinEvaluation(int input1, int coin)
+        {
+            if (input1 >= coin)
+            {
+                return true;
+            }
+            return false;
+
+        }//end coinEvaluation
+    
+
+        //evaluates the coin count
+        private int coinCountEvaluation(int coin2)
+        {
+              return coin2 += count;
+        }
+
+        private int inputEvaluation(int input2,int coin3)
+        {
+            return input2 -= coin3;
+        }
 
         //getters
 
